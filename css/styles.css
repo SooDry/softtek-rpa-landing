@@ -1208,6 +1208,80 @@ p {
     font-size: 0.85rem;
 }
 
+/* ROI Calculator */
+.roi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.roi-input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid #E2E8F0;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    transition: border-color var(--trans-fast), box-shadow var(--trans-fast);
+}
+
+.roi-input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+}
+
+.roi-slider {
+    width: 100%;
+    accent-color: var(--color-secondary);
+    height: 6px;
+    border-radius: 3px;
+    background: #E2E8F0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.roi-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-secondary);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.roi-result-box {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+}
+
+.roi-result-box::before {
+    content: '';
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    z-index: -1;
+    border-radius: calc(var(--radius-md) + 2px);
+}
+
+.roi-result-value {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
 /* ==========================================================================
    Animations & Utilities
    ========================================================================== */

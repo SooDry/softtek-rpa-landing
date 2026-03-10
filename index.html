@@ -29,14 +29,19 @@
                 <img src="Img/Logo_Softtek.png" alt="Softtek Logo" class="navbar-logo">
             </a>
             <nav class="nav-links">
-                <a href="#soluciones">Soluciones</a>
-                <a href="#plataformas">Plataformas</a>
-                <a href="#ia">Inteligencia Artificial</a>
-                <a href="#casos-uso">Casos de Uso</a>
-                <a href="#metodologia">Metodología</a>
+                <a href="#soluciones" data-i18n="nav.solutions">Soluciones</a>
+                <a href="#plataformas" data-i18n="nav.platforms">Plataformas</a>
+                <a href="#ia" data-i18n="nav.ai">Inteligencia Artificial</a>
+                <a href="#casos-uso" data-i18n="nav.usecases">Casos de Uso</a>
+                <a href="#metodologia" data-i18n="nav.methodology">Metodología</a>
             </nav>
             <div class="nav-actions">
-                <a href="#contacto" class="btn btn-outline">Solicitar Demo</a>
+                <div class="lang-switch">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                </div>
+                <a href="#contacto" class="btn btn-outline" data-i18n="nav.demo">Solicitar Demo</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Abrir menú">
                 <i class="ph ph-list"></i>
@@ -54,14 +59,19 @@
             </div>
             <div class="container hero-container">
                 <div class="hero-content fade-in-up">
-                    <span class="badge">Transformación Digital Estratégica</span>
-                    <h1>Automatización Inteligente para Empresas</h1>
-                    <p class="hero-subtitle">Ayudamos a organizaciones a optimizar procesos mediante RPA, automatización
-                        de datos, integración de sistemas y soluciones basadas en inteligencia artificial.</p>
+                    <span class="badge" data-i18n="hero.badge">Transformación Digital Estratégica</span>
+                    <h1 data-i18n="hero.title">Automatización Empresarial e Inteligencia Artificial</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Transforme sus operaciones mediante RPA, Agentes
+                        de IA y Automatización Inteligente. Softtek ayuda a empresas a optimizar procesos en SAP,
+                        ServiceNow, plataformas ITSM y sistemas empresariales mediante tecnologías modernas de
+                        automatización.</p>
                     <div class="hero-cta">
-                        <a href="#contacto" class="btn btn-primary">Solicitar demo <i class="ph ph-arrow-right"></i></a>
-                        <a href="#contacto" class="btn btn-secondary">Agendar reunión <i
-                                class="ph ph-calendar-plus"></i></a>
+                        <a href="#contacto" class="btn btn-primary" data-i18n="hero.btn.demo"
+                            data-i18n-html="true">Solicitar Demo <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contacto" class="btn btn-secondary" data-i18n="hero.btn.meeting"
+                            data-i18n-html="true">Hablar con un Experto <i class="ph ph-calendar-plus"></i></a>
+                        <a href="#contacto" class="btn btn-outline" data-i18n="hero.btn.brochure"
+                            data-i18n-html="true">Descargar Brochure <i class="ph ph-download-simple"></i></a>
                     </div>
                 </div>
                 <div class="hero-visual fade-in-up delay-1">
@@ -102,74 +112,125 @@
         <section class="section services-section bg-light" id="soluciones">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2>Nuestros Servicios de Automatización</h2>
-                    <p>Potenciamos sus operaciones con tecnología de última generación para alcanzar nuevos niveles de
-                        eficiencia y precisión empresarial.</p>
+                    <h2 data-i18n="services.title">Nuestros Servicios de Automatización</h2>
+                    <p data-i18n="services.desc">Potenciamos sus operaciones con tecnología de última generación para
+                        alcanzar nuevos niveles de eficiencia y precisión empresarial.</p>
                 </div>
                 <div class="grid services-grid">
                     <div class="service-card fade-in-up">
                         <i class="ph ph-gear"></i>
-                        <h3>Automatización RPA</h3>
-                        <p>Bots que ejecutan tareas repetitivas en sistemas empresariales.</p>
-                    </div>
-                    <div class="service-card fade-in-up delay-1">
-                        <i class="ph ph-arrows-merge"></i>
-                        <h3>Automatización de Procesos</h3>
-                        <p>Optimización de flujos operativos mediante automatización estructurada.</p>
-                    </div>
-                    <div class="service-card fade-in-up delay-2">
-                        <i class="ph ph-plugs-connected"></i>
-                        <h3>Integración de Sistemas</h3>
-                        <p>Conexión fluida y segura entre múltiples plataformas empresariales y legacy.</p>
-                    </div>
-                    <div class="service-card fade-in-up">
-                        <i class="ph ph-database"></i>
-                        <h3>Automatización de Datos</h3>
-                        <p>Procesamiento automático de información y generación de reportes en tiempo real.</p>
+                        <h3 data-i18n="services.rpa.title">Automatización RPA</h3>
+                        <p data-i18n="services.rpa.desc">Robots de software que ejecutan tareas repetitivas en sistemas
+                            empresariales.</p>
                     </div>
                     <div class="service-card fade-in-up delay-1">
                         <i class="ph ph-brain"></i>
-                        <h3>Soluciones de Inteligencia Artificial</h3>
-                        <p>Implementación de soluciones basadas en IA para mejorar eficiencia operativa y toma de
-                            decisiones.</p>
+                        <h3 data-i18n="services.ai.title">Agentes de Inteligencia Artificial</h3>
+                        <p data-i18n="services.ai.desc">Agentes capaces de interactuar con usuarios y ejecutar tareas
+                            operativas.</p>
+                    </div>
+                    <div class="service-card fade-in-up delay-2">
+                        <i class="ph ph-arrows-merge"></i>
+                        <h3 data-i18n="services.process.title">Automatización de Procesos</h3>
+                        <p data-i18n="services.process.desc">Optimización de flujos operativos mediante tecnologías de
+                            automatización.</p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <i class="ph ph-plugs-connected"></i>
+                        <h3 data-i18n="services.integration.title">Integración de Sistemas</h3>
+                        <p data-i18n="services.integration.desc">Conexión entre múltiples sistemas empresariales.</p>
+                    </div>
+                    <div class="service-card fade-in-up delay-1">
+                        <i class="ph ph-database"></i>
+                        <h3 data-i18n="services.data.title">Automatización de Datos</h3>
+                        <p data-i18n="services.data.desc">Extracción, procesamiento y generación automática de reportes.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. TECNOLOGÍAS Y PLATAFORMAS -->
+        <!-- 3. TECNOLOGÍAS QUE UTILIZAMOS -->
+        <section class="section tech-used-section bg-dark text-white" id="tecnologias">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="text-white" data-i18n="technologies.title">Tecnologías que Utilizamos</h2>
+                    <p class="text-white" data-i18n="technologies.desc">Nos asociamos con los líderes de la industria para entregar soluciones robustas y escalables.</p>
+                </div>
+                <div class="grid tech-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center;">
+                    <div class="glass-card dark fade-in-up">
+                        <i class="ph ph-robot" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>UiPath</span>
+                    </div>
+                    <div class="glass-card dark fade-in-up delay-1">
+                        <i class="ph ph-lightning" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>Power Automate</span>
+                    </div>
+                    <div class="glass-card dark fade-in-up delay-2">
+                        <i class="ph ph-infinity" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>Automation Anywhere</span>
+                    </div>
+                    <div class="glass-card dark fade-in-up delay-3">
+                        <i class="ph ph-cloud" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>Azure AI</span>
+                    </div>
+                    <div class="glass-card dark fade-in-up">
+                        <i class="ph ph-cpu" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>Frida Automation Platform</span>
+                    </div>
+                    <div class="glass-card dark fade-in-up delay-1">
+                        <i class="ph ph-code" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem; display: block;"></i>
+                        <span>Frida Code Copilot</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PLATAFORMAS QUE AUTOMATIZAMOS -->
         <section class="section tech-section" id="plataformas">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2>Plataformas que Automatizamos</h2>
-                    <p>Interactuamos fluidamente con los sistemas empresariales más críticos de su organización.</p>
+                    <h2 data-i18n="platforms.title">Plataformas que Automatizamos</h2>
+                    <p data-i18n="platforms.desc">Interactuamos fluidamente con los sistemas empresariales más críticos
+                        de su organización.</p>
                 </div>
                 <div class="grid tech-grid"
                     style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center;">
-                    <div class="glass-card fade-in-up"><i class="ph ph-briefcase"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>SAP</span>
+                    <div class="glass-card fade-in-up">
+                        <i class="ph ph-briefcase"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.sap">SAP</span>
                     </div>
-                    <div class="glass-card fade-in-up delay-1"><i class="ph ph-browser"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>Web
-                            Applications</span></div>
-                    <div class="glass-card fade-in-up delay-2"><i class="ph ph-file-csv"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>Excel</span>
+                    <div class="glass-card fade-in-up delay-1">
+                        <i class="ph ph-ticket"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.servicenow">ServiceNow</span>
                     </div>
-                    <div class="glass-card fade-in-up delay-3"><i class="ph ph-database"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>Bases
-                            de Datos</span></div>
-                    <div class="glass-card fade-in-up"><i class="ph ph-ticket"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>ServiceNow</span>
+                    <div class="glass-card fade-in-up delay-2">
+                        <i class="ph ph-kanban"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.jira">Jira</span>
                     </div>
-                    <div class="glass-card fade-in-up delay-1"><i class="ph ph-kanban"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>Jira</span>
+                    <div class="glass-card fade-in-up delay-3">
+                        <i class="ph ph-file-csv"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.excel">Excel</span>
                     </div>
-                    <div class="glass-card fade-in-up delay-2"><i class="ph ph-folders"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>SharePoint</span>
+                    <div class="glass-card fade-in-up">
+                        <i class="ph ph-browser"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.web">Web Applications</span>
                     </div>
-                    <div class="glass-card fade-in-up delay-3"><i class="ph ph-buildings"
-                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i><span>Sistemas
-                            Legados</span></div>
+                    <div class="glass-card fade-in-up delay-1">
+                        <i class="ph ph-database"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.db">Databases</span>
+                    </div>
+                    <div class="glass-card fade-in-up delay-2">
+                        <i class="ph ph-tree-structure"
+                            style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 0.5rem; display: block;"></i>
+                        <span data-i18n="platforms.itsm">ITSM Platforms</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,38 +239,40 @@
         <section class="section problem-section bg-light" id="problema" style="margin-top: 4rem;">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2>Los desafíos operativos que frenan su crecimiento</h2>
-                    <p>Identificamos y resolvemos los principales obstáculos en su flujo de trabajo operativo.</p>
+                    <h2 data-i18n="problems.title">Los desafíos operativos que frenan su crecimiento</h2>
+                    <p data-i18n="problems.desc">Identificamos y resolvemos los principales obstáculos en su flujo de
+                        trabajo operativo.</p>
                 </div>
                 <div class="grid problem-grid">
                     <div class="problem-card fade-in-up delay-1">
                         <div class="icon-wrap error"><i class="ph ph-hand-coins"></i></div>
-                        <h3>Procesos manuales repetitivos</h3>
-                        <p>Colaboradores atados a rutinas mecánicas en lugar de análisis crítico y estrategia de
-                            negocio.</p>
+                        <h3 data-i18n="problems.manual.title">Procesos manuales repetitivos</h3>
+                        <p data-i18n="problems.manual.desc">Colaboradores atados a rutinas mecánicas en lugar de
+                            análisis crítico y estrategia de negocio.</p>
                     </div>
                     <div class="problem-card fade-in-up delay-2">
                         <div class="icon-wrap error"><i class="ph ph-warning-circle"></i></div>
-                        <h3>Errores humanos</h3>
-                        <p>Costosas interrupciones en el servicio originadas por equivocaciones en la transcripción de
-                            datos.</p>
+                        <h3 data-i18n="problems.errors.title">Errores humanos</h3>
+                        <p data-i18n="problems.errors.desc">Costosas interrupciones en el servicio originadas por
+                            equivocaciones en la transcripción de datos.</p>
                     </div>
                     <div class="problem-card fade-in-up delay-3">
                         <div class="icon-wrap error"><i class="ph ph-hourglass-high"></i></div>
-                        <h3>Procesos lentos</h3>
-                        <p>Cuellos de botella prolongados que afectan gravemente el servicio al cliente y la
-                            facturación.</p>
+                        <h3 data-i18n="problems.slow.title">Procesos lentos</h3>
+                        <p data-i18n="problems.slow.desc">Cuellos de botella prolongados que afectan gravemente el
+                            servicio al cliente y la facturación.</p>
                     </div>
                     <div class="problem-card fade-in-up delay-4">
                         <div class="icon-wrap error"><i class="ph ph-plugs"></i></div>
-                        <h3>Falta de integración</h3>
-                        <p>Múltiples plataformas corporativas que funcionan como silos completamente desconectados.</p>
+                        <h3 data-i18n="problems.integration.title">Falta de integración</h3>
+                        <p data-i18n="problems.integration.desc">Múltiples plataformas corporativas que funcionan como
+                            silos completamente desconectados.</p>
                     </div>
                     <div class="problem-card fade-in-up delay-5">
                         <div class="icon-wrap error"><i class="ph ph-clock-counter-clockwise"></i></div>
-                        <h3>Pérdida de tiempo</h3>
-                        <p>Altos volúmenes de horas operativas desperdiciadas y falta de escalabilidad de los equipos.
-                        </p>
+                        <h3 data-i18n="problems.time.title">Pérdida de tiempo</h3>
+                        <p data-i18n="problems.time.desc">Altos volúmenes de horas operativas desperdiciadas y falta de
+                            escalabilidad de los equipos.</p>
                     </div>
                 </div>
             </div>
@@ -220,53 +283,46 @@
             <div class="container">
                 <div class="benefits-layout">
                     <div class="benefits-content fade-in-up">
-                        <h2>El impacto de la Automatización Inteligente</h2>
+                        <h2 data-i18n="benefits.title">Impacto Empresarial</h2>
                         <ul class="benefits-list">
                             <li>
                                 <i class="ph-fill ph-check-circle text-primary"></i>
                                 <div>
-                                    <strong>Reducción de costos operativos</strong>
-                                    <p>Disminuya dramáticamente los gastos recurrentes asociados a operaciones manuales.
-                                    </p>
+                                    <strong data-i18n="benefits.cost.title">Reducción de costos operativos</strong>
+                                    <p data-i18n="benefits.cost.desc">Disminuya dramáticamente los gastos recurrentes
+                                        asociados a operaciones manuales.</p>
                                 </div>
                             </li>
                             <li>
                                 <i class="ph-fill ph-check-circle text-primary"></i>
                                 <div>
-                                    <strong>Mayor productividad</strong>
-                                    <p>Libere a su equipo para enfocarse en tareas de alto valor, aumentando la
-                                        eficiencia global.</p>
+                                    <strong data-i18n="benefits.prod.title">Incremento de productividad</strong>
+                                    <p data-i18n="benefits.prod.desc">Libere a su equipo para enfocarse en tareas de
+                                        alto valor, aumentando la eficiencia global.</p>
                                 </div>
                             </li>
                             <li>
                                 <i class="ph-fill ph-check-circle text-primary"></i>
                                 <div>
-                                    <strong>Procesos más rápidos</strong>
-                                    <p>Ejecución acelerada de flujos de trabajo críticos de extremo a extremo.</p>
+                                    <strong data-i18n="benefits.fast.title">Automatización 24/7</strong>
+                                    <p data-i18n="benefits.fast.desc">Procesamiento continuo ininterrumpido las 24 horas
+                                        del día, los 365 días del año.</p>
                                 </div>
                             </li>
                             <li>
                                 <i class="ph-fill ph-check-circle text-primary"></i>
                                 <div>
-                                    <strong>Menor error humano</strong>
-                                    <p>Precisión del 100% y exactitud garantizada en la transcripción y procesamiento de
-                                        datos.</p>
+                                    <strong data-i18n="benefits.errors.title">Eliminación de errores humanos</strong>
+                                    <p data-i18n="benefits.errors.desc">Precisión del 100% y exactitud garantizada en la
+                                        transcripción y procesamiento de datos.</p>
                                 </div>
                             </li>
                             <li>
                                 <i class="ph-fill ph-check-circle text-primary"></i>
                                 <div>
-                                    <strong>Operación 24/7</strong>
-                                    <p>Procesamiento continuo ininterrumpido las 24 horas del día, los 365 días del año.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="ph-fill ph-check-circle text-primary"></i>
-                                <div>
-                                    <strong>Cumplimiento de SLA</strong>
-                                    <p>Cumplimiento garantizado en tiempos de respuesta y visibilidad total operativa.
-                                    </p>
+                                    <strong data-i18n="benefits.sla.title">Cumplimiento de SLA</strong>
+                                    <p data-i18n="benefits.sla.desc">Cumplimiento garantizado en tiempos de respuesta y
+                                        visibilidad total operativa.</p>
                                 </div>
                             </li>
                         </ul>
@@ -281,7 +337,7 @@
                                     <div class="bar rpa" style="height: 15%;"><span>RPA/AI (1.5h)</span></div>
                                 </div>
                                 <div class="roi-badge">
-                                    <span>ROI</span>
+                                    <span data-i18n="benefits.roi.label">ROI</span>
                                     <strong>+280%</strong>
                                 </div>
                             </div>
@@ -295,45 +351,39 @@
         <section class="section ai-section bg-dark text-white" id="ia">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2 class="text-white">Soluciones de Inteligencia Artificial</h2>
-                    <p class="text-white">Capacidades cognitivas avanzadas integradas directamente a sus procesos.</p>
+                    <h2 class="text-white" data-i18n="ai.title">Soluciones de Inteligencia Artificial</h2>
+                    <p class="text-white" data-i18n="ai.desc">Capacidades cognitivas avanzadas integradas directamente a
+                        sus procesos.</p>
                 </div>
                 <div class="grid ai-grid"
                     style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <div class="glass-card dark fade-in-up">
                         <i class="ph ph-headset"
                             style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1rem; display: block;"></i>
-                        <h3 class="text-white">Soporte Empresarial</h3>
-                        <p class="text-white" style="opacity: 0.8;">Agentes IA interactivos para resolver solicitudes e
-                            incidentes de soporte interno y externo omnicanal.</p>
+                        <h3 class="text-white" data-i18n="ai.support.title">Soporte Empresarial</h3>
+                        <p class="text-white" style="opacity: 0.8;" data-i18n="ai.support.desc">Agentes IA interactivos
+                            para resolver solicitudes e incidentes de soporte interno y externo omnicanal.</p>
                     </div>
                     <div class="glass-card dark fade-in-up delay-1">
                         <i class="ph ph-brain"
                             style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1rem; display: block;"></i>
-                        <h3 class="text-white">Decisiones Inteligentes</h3>
-                        <p class="text-white" style="opacity: 0.8;">Automatización de procesos basados en reglas
-                            complejas y análisis de datos no estructurados en tiempo real.</p>
+                        <h3 class="text-white" data-i18n="ai.decisions.title">Decisiones Inteligentes</h3>
+                        <p class="text-white" style="opacity: 0.8;" data-i18n="ai.decisions.desc">Modelos predictivos
+                            que asisten a ejecutivos con analítica en tiempo real.</p>
                     </div>
                     <div class="glass-card dark fade-in-up delay-2">
                         <i class="ph ph-magnifying-glass"
                             style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1rem; display: block;"></i>
-                        <h3 class="text-white">Consultas de Información</h3>
-                        <p class="text-white" style="opacity: 0.8;">Asistentes cognitivos capaces de bucear en grandes
-                            bases de conocimiento para entregar respuestas precisas.</p>
+                        <h3 class="text-white" data-i18n="ai.queries.title">Consultas de Información</h3>
+                        <p class="text-white" style="opacity: 0.8;" data-i18n="ai.queries.desc">Interfaces de lenguaje
+                            natural para consultar bases de datos corporativas complejas.</p>
                     </div>
                     <div class="glass-card dark fade-in-up">
-                        <i class="ph ph-git-branch"
-                            style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1rem; display: block;"></i>
-                        <h3 class="text-white">Tareas Complejas</h3>
-                        <p class="text-white" style="opacity: 0.8;">Orquestación automática de flujos de trabajo
-                            paralelos y tareas con múltiples variables condicionales.</p>
-                    </div>
-                    <div class="glass-card dark fade-in-up delay-1">
                         <i class="ph ph-terminal-window"
                             style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1rem; display: block;"></i>
-                        <h3 class="text-white">Agentes Ejecutores</h3>
-                        <p class="text-white" style="opacity: 0.8;">Agentes IA autónomos capaces de ejecutar acciones
-                            dentro de diversos sistemas corporativos.</p>
+                        <h3 class="text-white" data-i18n="ai.complex.title">Automatización Compleja</h3>
+                        <p class="text-white" style="opacity: 0.8;" data-i18n="ai.complex.desc">Procesamiento de
+                            documentos no estructurados usando OCR y machine learning.</p>
                     </div>
                 </div>
             </div>
@@ -343,45 +393,32 @@
         <section class="section usecases-section bg-light" id="casos-uso">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2>Casos de Uso Comunes</h2>
-                    <p>Ejemplos de cómo la automatización y la IA generan valor en áreas clave.</p>
+                    <h2 data-i18n="usecases.title">Casos de Uso de Automatización</h2>
+                    <p data-i18n="usecases.desc">Descubra cómo resolvemos desafíos complejos del mundo real.</p>
                 </div>
                 <div class="grid usecases-grid">
                     <div class="usecase-card fade-in-up">
-                        <div class="usecase-header"><span class="dept">Operaciones IT</span></div>
-                        <h3>Gestión de Tickets</h3>
-                        <p>Creación automática de tickets, categorización inteligente y asignación basada en carga del
-                            equipo.</p>
-                    </div>
-                    <div class="usecase-card fade-in-up delay-1">
-                        <div class="usecase-header"><span class="dept">Finanzas / ERP</span></div>
-                        <h3>Reportes SAP</h3>
-                        <p>Descarga automática de reportes SAP, consolidación cruzada y envío programado a stakeholders.
+                        <div class="usecase-header"><span class="dept">SAP</span></div>
+                        <h3 data-i18n="usecases.sap.title">Automatización de pedidos en SAP</h3>
+                        <p data-i18n="usecases.sap.desc">Creación automática de pedidos en SAP mediante robots UiPath.
                         </p>
                     </div>
+                    <div class="usecase-card fade-in-up delay-1">
+                        <div class="usecase-header"><span class="dept">ServiceNow</span></div>
+                        <h3 data-i18n="usecases.servicenow.title">Automatización de reportes en ServiceNow</h3>
+                        <p data-i18n="usecases.servicenow.desc">Robots que generan reportes de ingreso de vehículos y
+                            personas.</p>
+                    </div>
                     <div class="usecase-card fade-in-up delay-2">
-                        <div class="usecase-header"><span class="dept">Gestión de Datos</span></div>
-                        <h3>Procesamiento en Excel</h3>
-                        <p>Extracción, validación cruzada y procesamiento de miles de registros en hojas de cálculo
-                            complejas.</p>
+                        <div class="usecase-header"><span class="dept">ITSM</span></div>
+                        <h3 data-i18n="usecases.agent.title">Agente IA para creación de tickets</h3>
+                        <p data-i18n="usecases.agent.desc">Agente capaz de generar tickets automáticamente según reglas
+                            ITSM.</p>
                     </div>
                     <div class="usecase-card fade-in-up">
-                        <div class="usecase-header"><span class="dept">Web y Scraping</span></div>
-                        <h3>Portales Web</h3>
-                        <p>Automatización de consultas, descargas o capturas en portales de proveedores o entidades
-                            gubernamentales.</p>
-                    </div>
-                    <div class="usecase-card fade-in-up delay-1">
-                        <div class="usecase-header"><span class="dept">Integración B2B</span></div>
-                        <h3>Sincronización de Sistemas</h3>
-                        <p>Flujos integrados de datos entre Jira, ServiceNow y bibliotecas colaborativas de SharePoint.
-                        </p>
-                    </div>
-                    <div class="usecase-card fade-in-up delay-2">
-                        <div class="usecase-header"><span class="dept">Atención y Soporte</span></div>
-                        <h3>Agentes IA N1</h3>
-                        <p>Asistentes cognitivos que resuelven requerimientos recurrentes (Nivel 1), escalando solo
-                            anomalías.</p>
+                        <div class="usecase-header"><span class="dept">Frida</span></div>
+                        <h3 data-i18n="usecases.solman.title">Automatización de tickets en Solman</h3>
+                        <p data-i18n="usecases.solman.desc">Creación y cierre de tickets usando la plataforma Frida.</p>
                     </div>
                 </div>
             </div>
@@ -391,60 +428,65 @@
         <section class="section methodology-section" id="metodologia">
             <div class="container">
                 <div class="section-header text-center fade-in-up">
-                    <h2>Nuestra Metodología</h2>
-                    <p>Proceso estructurado de implementación de clase mundial liderado por expertos de Softtek.</p>
+                    <h2 data-i18n="methodology.title">Nuestra Metodología</h2>
+                    <p data-i18n="methodology.desc">Proceso estructurado de implementación de clase mundial liderado por
+                        expertos de Softtek.</p>
                 </div>
                 <div class="timeline">
                     <div class="timeline-item fade-in-up">
                         <div class="timeline-icon">1</div>
                         <div class="timeline-content">
-                            <h3>Análisis del proceso</h3>
-                            <p>Mapeo profundo de la operativa, levantamiento de requerimientos y volumetría.</p>
+                            <h3 data-i18n="methodology.step1.title">Análisis del proceso</h3>
+                            <p data-i18n="methodology.step1.desc">Mapeo profundo de la operativa, levantamiento de
+                                requerimientos y volumetría.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-1">
                         <div class="timeline-icon">2</div>
                         <div class="timeline-content">
-                            <h3>Identificación de automatización</h3>
-                            <p>Selección de los flujos de máxima viabilidad técnica y mayor retorno de inversión.</p>
+                            <h3 data-i18n="methodology.step2.title">Identificación de automatización</h3>
+                            <p data-i18n="methodology.step2.desc">Selección de los flujos de máxima viabilidad técnica y
+                                mayor retorno de inversión.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-2">
                         <div class="timeline-icon">3</div>
                         <div class="timeline-content">
-                            <h3>Diseño de solución</h3>
-                            <p>Arquitectura ("To-Be"), definición de infraestructura y flujos de excepciones aplicables.
-                            </p>
+                            <h3 data-i18n="methodology.step3.title">Diseño de solución</h3>
+                            <p data-i18n="methodology.step3.desc">Arquitectura ("To-Be"), definición de infraestructura
+                                y flujos de excepciones aplicables.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-3">
                         <div class="timeline-icon">4</div>
                         <div class="timeline-content">
-                            <h3>Desarrollo</h3>
-                            <p>Construcción de bots y agentes IA siguiendo rigurosos estándares corporativos.</p>
+                            <h3 data-i18n="methodology.step4.title">Desarrollo</h3>
+                            <p data-i18n="methodology.step4.desc">Construcción de bots y agentes IA siguiendo rigurosos
+                                estándares corporativos.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-4">
                         <div class="timeline-icon">5</div>
                         <div class="timeline-content">
-                            <h3>Pruebas</h3>
-                            <p>Ejecución integral de UAT, validando la estabilidad en entornos pre-productivos.</p>
+                            <h3 data-i18n="methodology.step5.title">Pruebas</h3>
+                            <p data-i18n="methodology.step5.desc">Ejecución integral de UAT, validando la estabilidad en
+                                entornos pre-productivos.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-5">
                         <div class="timeline-icon">6</div>
                         <div class="timeline-content">
-                            <h3>Implementación</h3>
-                            <p>Puesta en producción controlada (hypercare), estabilización y capacitación a usuarios
-                                clave.</p>
+                            <h3 data-i18n="methodology.step6.title">Implementación</h3>
+                            <p data-i18n="methodology.step6.desc">Puesta en producción controlada (hypercare),
+                                estabilización y capacitación a usuarios clave.</p>
                         </div>
                     </div>
                     <div class="timeline-item fade-in-up delay-5">
                         <div class="timeline-icon">7</div>
                         <div class="timeline-content">
-                            <h3>Mejora continua</h3>
-                            <p>Soporte proactivo, monitorización continua y optimización evolutiva de los procesos
-                                entregados.</p>
+                            <h3 data-i18n="methodology.step7.title">Mejora continua</h3>
+                            <p data-i18n="methodology.step7.desc">Soporte proactivo, monitorización continua y
+                                optimización evolutiva de los procesos entregados.</p>
                         </div>
                     </div>
                 </div>
@@ -456,47 +498,85 @@
             <div class="container">
                 <div class="grid whyus-grid align-center">
                     <div class="whyus-content fade-in-up">
-                        <h2>El socio tecnológico de las empresas líderes</h2>
+                        <h2 data-i18n="whyus.title">El socio tecnológico de las empresas líderes</h2>
                         <ul class="check-list">
-                            <li><i class="ph ph-check"></i> <strong>Experiencia empresarial:</strong> Consultores
-                                especializados en procesos core corporativos.</li>
-                            <li><i class="ph ph-check"></i> <strong>Multi-plataforma:</strong> Expertise en UiPath,
-                                Automation Anywhere, Blue Prism y Power Automate.</li>
-                            <li><i class="ph ph-check"></i> <strong>Soluciones escalables:</strong> Arquitecturas
-                                preparadas para volumen corporativo y alta disponibilidad.</li>
-                            <li><i class="ph ph-check"></i> <strong>Integración sistémica:</strong> Conectamos sistemas
-                                cerrados legacy con tecnologías modernas sin crear APIs.</li>
+                            <li data-i18n="whyus.exp" data-i18n-html="true"><i class="ph ph-check"></i>
+                                <strong>Experiencia empresarial:</strong> Consultores especializados en procesos core
+                                corporativos.</li>
+                            <li data-i18n="whyus.multi" data-i18n-html="true"><i class="ph ph-check"></i>
+                                <strong>Multi-plataforma:</strong> Expertise en UiPath, Automation Anywhere, Blue Prism
+                                y Power Automate.</li>
+                            <li data-i18n="whyus.scale" data-i18n-html="true"><i class="ph ph-check"></i>
+                                <strong>Soluciones escalables:</strong> Arquitecturas preparadas para volumen
+                                corporativo y alta disponibilidad.</li>
+                            <li data-i18n="whyus.integ" data-i18n-html="true"><i class="ph ph-check"></i>
+                                <strong>Integración sistémica:</strong> Conectamos sistemas cerrados legacy con
+                                tecnologías modernas sin crear APIs.</li>
                         </ul>
                     </div>
                     <div class="whyus-stats fade-in-up delay-2">
                         <div class="stat-card glass-card dark">
                             <span class="stat-big">500+</span>
-                            <span class="stat-text">Procesos Automatizados</span>
+                            <span class="stat-text" data-i18n="whyus.stat1">Procesos Automatizados</span>
                         </div>
                         <div class="stat-card glass-card dark">
                             <span class="stat-big">1M+</span>
-                            <span class="stat-text">Horas Ahorradas Anualmente</span>
+                            <span class="stat-text" data-i18n="whyus.stat2">Horas Ahorradas Anualmente</span>
                         </div>
                         <div class="stat-card glass-card dark">
                             <span class="stat-big">99.9%</span>
-                            <span class="stat-text">Tasa de Precisión en Bots</span>
+                            <span class="stat-text" data-i18n="whyus.stat3">Tasa de Precisión en Bots</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 9. CTA FINAL -->
+        <!-- 9. CALCULADORA DE ROI -->
+        <section class="section roi-section bg-light" id="calculadora-roi">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 data-i18n="roi.title">Calculadora de ROI de Automatización</h2>
+                </div>
+                <div class="roi-calculator glass-card fade-in-up" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+                    <div class="roi-grid">
+                        <div class="roi-inputs">
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="roi-hours" data-i18n="roi.hours" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Horas invertidas semanalmente en tareas manuales</label>
+                                <input type="number" id="roi-hours" value="40" min="0" class="roi-input">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="roi-cost" data-i18n="roi.cost" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Costo por hora del empleado ($)</label>
+                                <input type="number" id="roi-cost" value="25" min="0" class="roi-input">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="roi-percentage" data-i18n="roi.percentage" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Porcentaje de automatización (%)</label>
+                                <input type="range" id="roi-percentage" min="0" max="100" value="50" class="roi-slider" style="margin-bottom: 0.5rem;">
+                                <div class="slider-value" style="text-align: right; font-weight: bold; color: var(--color-primary);"><span id="roi-percentage-val">50</span>%</div>
+                            </div>
+                        </div>
+                        <div class="roi-result-box">
+                            <h3 data-i18n="roi.result" style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1rem;">Ahorro anual estimado</h3>
+                            <div class="roi-result-value text-gradient">$<span id="roi-savings">26,000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA FINAL -->
         <section class="section cta-section" id="cta">
             <div class="cta-bg"></div>
             <div class="container text-center text-white fade-in-up">
-                <h2>Empiece a automatizar sus procesos hoy</h2>
-                <p>Descubra el potencial de nuestras soluciones para transformar la eficiencia de su equipo y escalar
-                    sus operaciones. Nuestro equipo de expertos está listo para diseñar una estrategia integral a su
-                    medida.</p>
+                <h2 data-i18n="cta.title">Comience su Automatización Hoy</h2>
+                <p data-i18n="cta.desc">Descubra el potencial de nuestras soluciones para transformar la eficiencia de
+                    su equipo y escalar sus operaciones. Nuestro equipo de expertos está listo para diseñar una
+                    estrategia integral a su medida.</p>
                 <div class="cta-actions">
-                    <a href="#contacto" class="btn btn-primary light">Solicitar demo</a>
-                    <a href="#contacto" class="btn btn-outline light">Contactar</a>
+                    <a href="#contacto" class="btn btn-primary light" data-i18n="cta.btn.demo">Solicitar Demo</a>
+                    <a href="#contacto" class="btn btn-secondary light" data-i18n="cta.btn.expert">Hablar con un
+                        Experto</a>
+                    <a href="#contacto" class="btn btn-outline light" data-i18n="cta.btn.contact">Contáctenos</a>
                 </div>
             </div>
         </section>
@@ -506,20 +586,21 @@
             <div class="container">
                 <div class="grid contact-grid">
                     <div class="contact-info fade-in-up">
-                        <h2>Hablemos de Transformación</h2>
-                        <p>Complete el formulario y uno de nuestros especialistas en automatización corporativa se
-                            pondrá en contacto a la brevedad.</p>
+                        <h2 data-i18n="contact.title">Hablemos de Transformación</h2>
+                        <p data-i18n="contact.desc">Complete el formulario y uno de nuestros especialistas en
+                            automatización corporativa se pondrá en contacto a la brevedad.</p>
                         <div class="contact-methods"
                             style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
                             <a href="#contacto" class="btn btn-primary w-100"
-                                style="padding: 1.2rem; font-size: 1.1rem; justify-content: center; box-shadow: 0 10px 25px rgba(0, 112, 243, 0.4);">
+                                style="padding: 1.2rem; font-size: 1.1rem; justify-content: center; box-shadow: 0 10px 25px rgba(0, 112, 243, 0.4);"
+                                data-i18n="contact.quick" data-i18n-html="true">
                                 <i class="ph-fill ph-lightning"></i> Contacto Rápido Inmediato
                             </a>
                             <div class="contact-method-card" style="margin-top: 1rem;">
                                 <i class="ph-fill ph-envelope-simple text-primary"></i>
                                 <div>
-                                    <strong>Correo Corporativo</strong>
-                                    <span>transformacion@softtek.com</span>
+                                    <strong data-i18n="contact.email.title">Correo Corporativo</strong>
+                                    <span data-i18n="contact.email.desc">transformacion@softtek.com</span>
                                 </div>
                             </div>
                         </div>
@@ -527,31 +608,37 @@
                     <div class="contact-form-container fade-in-up delay-2">
                         <form id="contactForm" class="glass-card form-card">
                             <div class="form-group">
-                                <label for="name">Nombre</label>
-                                <input type="text" id="name" name="name" required placeholder="Su nombre y apellido">
+                                <label for="name" data-i18n="contact.form.name">Nombre</label>
+                                <input type="text" id="name" name="name" required placeholder="Su nombre y apellido"
+                                    data-i18n-placeholder="contact.form.name.ph">
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="company">Empresa</label>
+                                    <label for="company" data-i18n="contact.form.company">Empresa</label>
                                     <input type="text" id="company" name="company" required
-                                        placeholder="Nombre de la compañía">
+                                        placeholder="Nombre de la compañía"
+                                        data-i18n-placeholder="contact.form.company.ph">
                                 </div>
                                 <div class="form-group">
-                                    <label for="phone">Teléfono</label>
-                                    <input type="tel" id="phone" name="phone" required placeholder="Número de contacto">
+                                    <label for="phone" data-i18n="contact.form.phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Número de contacto"
+                                        data-i18n-placeholder="contact.form.phone.ph">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email">Correo</label>
+                                <label for="email" data-i18n="contact.form.email">Correo</label>
                                 <input type="email" id="email" name="email" required
-                                    placeholder="Correo electrónico corporativo">
+                                    placeholder="Correo electrónico corporativo"
+                                    data-i18n-placeholder="contact.form.email.ph">
                             </div>
                             <div class="form-group">
-                                <label for="message">Mensaje</label>
+                                <label for="message" data-i18n="contact.form.message">Mensaje</label>
                                 <textarea id="message" name="message" rows="4" required
-                                    placeholder="¿En qué área busca integrar automatización o inteligencia artificial?"></textarea>
+                                    placeholder="¿En qué área busca integrar automatización o inteligencia artificial?"
+                                    data-i18n-placeholder="contact.form.message.ph"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Solicitar Información</button>
+                            <button type="submit" class="btn btn-primary w-100"
+                                data-i18n="contact.form.submit">Solicitar Información</button>
                             <div id="formStatus" class="form-status"></div>
                         </form>
                     </div>
@@ -568,34 +655,35 @@
                     <a href="#" class="logo">
                         <img src="Img/Logo_Softtek.png" alt="Softtek Logo" class="footer-logo">
                     </a>
-                    <p>Socio estratégico de transformación digital mediante Automatización Inteligente e Inteligencia
-                        Artificial corporativa.</p>
+                    <p data-i18n="footer.desc">Socio estratégico de transformación digital mediante Automatización
+                        Inteligente e Inteligencia Artificial corporativa.</p>
                 </div>
                 <div class="footer-links">
-                    <h3>Servicios</h3>
+                    <h3 data-i18n="footer.services">Servicios</h3>
                     <ul>
-                        <li><a href="#soluciones">Automatización RPA</a></li>
-                        <li><a href="#ia">Agentes de Inteligencia Artificial</a></li>
-                        <li><a href="#soluciones">Integración de Sistemas</a></li>
-                        <li><a href="#plataformas">Automatización de Datos</a></li>
+                        <li><a href="#soluciones" data-i18n="services.rpa.title">Automatización RPA</a></li>
+                        <li><a href="#ia" data-i18n="services.ai.title">Agentes de Inteligencia Artificial</a></li>
+                        <li><a href="#soluciones" data-i18n="services.integration.title">Integración de Sistemas</a>
+                        </li>
+                        <li><a href="#plataformas" data-i18n="services.data.title">Automatización de Datos</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h3>Empresa</h3>
+                    <h3 data-i18n="footer.company">Empresa</h3>
                     <ul>
-                        <li><a href="#metodologia">Metodología</a></li>
-                        <li><a href="#casos-uso">Casos de Uso</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#metodologia" data-i18n="nav.methodology">Metodología</a></li>
+                        <li><a href="#casos-uso" data-i18n="nav.usecases">Casos de Uso</a></li>
+                        <li><a href="#contacto" data-i18n="cta.btn.contact">Contáctenos</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Softtek RPA Solutions. Todos los derechos reservados.</p>
+                <p data-i18n="footer.rights">&copy; 2026 Softtek RPA Solutions. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 

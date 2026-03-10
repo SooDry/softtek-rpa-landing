@@ -22,6 +22,8 @@
     --color-success: #10B981;
     --color-warning: #F59E0B;
     --color-error: #EF4444;
+    --color-softtek: #003B5C;
+    /* Official Corporate Blue Approximation */
 
     /* Typography */
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
@@ -358,6 +360,18 @@ p {
     color: var(--color-primary);
 }
 
+/* Navbar Logo */
+.navbar-logo {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform var(--trans-fast);
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -506,10 +520,25 @@ p {
     color: var(--color-primary);
 }
 
+.process-flow .node .hero-inline-logo {
+    height: 48px;
+    width: auto;
+    background: white;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
 .process-flow .node.active i {
     background: var(--color-secondary);
     color: white;
     box-shadow: var(--shadow-glow);
+}
+
+.process-flow .node.active {
+    color: var(--color-softtek);
+    font-weight: 700;
 }
 
 .process-flow .line {
@@ -645,6 +674,46 @@ p {
 .icon-wrap.error {
     background: rgba(239, 68, 68, 0.1);
     color: var(--color-error);
+}
+
+/* AI Section */
+.ai-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.ai-section .glass-card {
+    transition: transform var(--trans-normal), box-shadow var(--trans-normal), border-color var(--trans-normal);
+}
+
+.ai-section .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+    border-color: rgba(0, 196, 182, 0.4);
+}
+
+/* Tech Section */
+.tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.tech-grid .glass-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    cursor: default;
+    transition: transform var(--trans-fast), box-shadow var(--trans-fast);
+}
+
+.tech-grid .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.tech-grid span {
+    font-weight: 500;
+    color: var(--text-main);
 }
 
 /* Services Section */
@@ -783,9 +852,10 @@ p {
     font-size: 1.8rem;
 }
 
-/* Use Cases */
+/* Use Cases Section */
 .usecases-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 }
 
 .usecase-card {
@@ -1094,6 +1164,20 @@ p {
 .footer-brand .logo {
     color: white;
     margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.footer-logo {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity var(--trans-fast);
+}
+
+.footer-logo:hover {
+    opacity: 1;
 }
 
 .footer-brand p {
